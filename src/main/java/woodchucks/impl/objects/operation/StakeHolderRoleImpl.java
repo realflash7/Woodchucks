@@ -1,10 +1,8 @@
 package woodchucks.impl.objects.operation;
 
 import woodchucks.api.objects.operation.StakeHolderRole;
-import woodchucks.api.objects.standard.Person;
 
 import java.util.Date;
-import java.util.List;
 
 /**
  * <<Details>>
