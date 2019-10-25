@@ -11,7 +11,7 @@ import woodchucks.api.objects.common.ID;
  */
 public interface Operation {
 
-    public ID getID();
-    public String getName();
-    public OperationType getOperationType();
+    ID getID();
+    String getName();
+    OperationType getOperationType();
 }

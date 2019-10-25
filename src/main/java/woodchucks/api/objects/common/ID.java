@@ -8,5 +8,5 @@ package woodchucks.api.objects.common;
  */
 public interface ID {
 
-    public String getIDValue();
+    String get();
 }
