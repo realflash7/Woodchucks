@@ -1,4 +1,4 @@
 # Woodchucks
 
 
-Startup Repo
+Platform for startup news and Company Insights.
