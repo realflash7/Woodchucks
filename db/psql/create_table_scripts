@@ -1,0 +1,30 @@
+CREATE TABLE contact(
+id VARCHAR(15) PRIMARY KEY);
+
+CREATE TABLE person(
+id VARCHAR(15) PRIMARY KEY);
+
+CREATE TABLE location(
+id VARCHAR(15) PRIMARY KEY);
+
+CREATE TABLE operation(
+id VARCHAR(15) PRIMARY KEY,  
+name text,
+operation_type VARCHAR(50));
+
+CREATE TABLE stakeholder_role(
+id VARCHAR(15) PRIMARY KEY,
+name text,
+from_date date,
+to_date date,
+is_active Boolean);
+
+CREATE TABLE stakeholder(
+id VARCHAR(15) PRIMARY KEY,
+role VARCHAR(15), 
+FOREIGN KEY(role) REFERENCES stakeholder_role(id));
+
+CREATE TABLE person_sh_relation(
+id VARCHAR(15) PRIMARY KEY,
+person_id VARCHAR(15) references person(id),
+sh_id VARCHAR(15) references stakeholder(id));
